@@ -1,0 +1,44 @@
+iMac下也能用抓包工具Fiddler
+此步是为了从Mozilla LXR上下载所有受信任的root证书，存于Mono的证书库里。root证书能用于请求https地址。
+接下来如果想要运行Fiddler，还需要把Mono加入到环境变量中。编辑.bash_profile文件：
+sudo vi ~/.bash_profile
+
+加入文本：
+export MONO_HOME=/Library/Frameworks/Mono.framework/Versions/5.0.1
+export PATH=$PATH:$MONO_HOME/bin
+
+保存后重新打开Terminal，Mono环境已装好。
+Fiddler的安装
+从Fiddler官网https://www.telerik.com/download/fiddler下载fiddler-mac.zip的压缩包。解压到非中文字符的路径下。
+Fiddler运行
+打开Terminal，进入到刚才解压的Fiddler路径，执行命令运行：
+
+作者：陈康stozen
+链接：https://www.jianshu.com/p/57ec761cb5a3
+来源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。gg
+直到去年10月份(2016年10月)，Telerik官网上悄然地放上了Fiddler的OSX版，这让我欣喜若狂，赶紧来尝试。
+环境安装
+Mono安装
+首先，Mac下需要使用.Net编译后的程序，需要用到跨平台的方案Mono(现阶段微软已推出跨平台的方案.Net Core，不过暂时只支持控制台程序)。安装程序可以从http://www.mono-project.com/download/#download-mac�地址下载。
+安装完后，在Terminal里执行以下命令：
+/Library/Frameworks/Mono.framework/Versions/<Mono Version>/bin/mozroots --import --sync
+
+此步是为了从Mozilla LXR上下载所有受信任的root证书，存于Mono的证书库里。root证书能用于请求https地址。
+接下来如果想要运行Fiddler，还需要把Mono加入到环境变量中。编辑.bash_profile文件：
+sudo vi ~/.bash_profile
+
+加入文本：
+export MONO_HOME=/Library/Frameworks/Mono.framework/Versions/5.0.1
+export PATH=$PATH:$MONO_HOME/bin
+
+保存后重新打开Terminal，Mono环境已装好。
+Fiddler的安装
+从Fiddler官网https://www.telerik.com/download/fiddler下载fiddler-mac.zip的压缩包。解压到非中文字符的路径下。
+Fiddler运行
+打开Terminal，进入到刚才解压的Fiddler路径，执行命令运行：
+
+作者：陈康stozen
+链接：https://www.jianshu.com/p/57ec761cb5a3
+来源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。

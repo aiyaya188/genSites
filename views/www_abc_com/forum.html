@@ -1,0 +1,124 @@
+{{define "/tpl1/forum.html"}}
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.CurrentForum.ForumName}}</title>
+    <meta name="keywords" content="" />
+	<meta name="description" content="{{.CurrentForum.ForumName}}" />
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="MobileOptimized" content="width"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css"   href="../static/www_abc_com/css/index.css" />
+    <link rel="stylesheet" type="text/css"   href="../static/www_abc_com/css/sincat.css" />
+	<script type="text/javascript" src="../static/www_abc_com/js/jquery1.42.min.js"></script>
+	<script type="text/javascript" src="../static/www_abc_com/js/jquery.SuperSlide.2.1.1.js"></script> 
+</head>
+<body>
+{{template "/tpl1/header.html" .}}
+<div class="main ">
+	<div class="top2 mulutop2">
+		<div class="mianleft">
+			<div class="maincontent">
+					<!-- 专题说明 -->
+
+				<div class="mulutop">
+					<div class="mulutopleft">
+						<img src="/d/file/p/3c2826fc1c50ba7ed9011fa6674820e3.png" alt="{{.CurrentForum.ForumName}}">
+					</div>
+
+					<div class="mulutoprigh">
+						<div class="mulutoph1"><h1>{{.CurrentForum.ForumName}}</h1></div>
+						<div class="mulutopdes">书中自有黄金屋，即使用到SEO这类互联网领域也不例外。该板块将提供网友针对博主的任何SEO问题解答，快速让SEO知识变得丰富和实用！</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="mianbaoxie">
+					当前位置：<a href="/">首页</a>&nbsp;>&nbsp;<a href="/forum/{{.CurrentForum.ID}}">{{.CurrentForum.ForumName}}</a>
+				</div>
+					<!-- 专题说明结束 -->
+				<!-- 目录循环 -->
+
+            {{range $articleKey,$article:=.Articles}}
+				<div class="clear"></div>
+				<div class="content">
+					<div class="contop">
+						<div class="contopleft">
+							<div class="conttitle">
+								<a href="../article/{{$article.ID}}" >{{$article.Title}}</a>
+							</div>
+							<div class="condes">{{$article.Summary}}</div>
+						</div>
+
+						<div class="contentright">
+
+									<a href="../article/{{$article.ID}}l"><img src="http://www.lizseo.com/e/data/tmp/titlepic/6566ae53b8c57922831c133f4890e2ad.png" alt="请教下附子老师，关于黑帽SEO优化有什么想说的？" ></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+
+					<div class="contdow">
+						<div class="conyuedu muluyuedu"><span class="yuedubj" >阅读</span>486</div>
+						<div class="fbtime mulutime"><span class="timebj" ></span>2019-03-06</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				{{end}}
+				<!-- 目录循环结束 -->
+				<div class="fanye">&nbsp;<b>1</b>&nbsp;<a href="http://www.lizseo.com/zhishi/index_2.html">2</a>&nbsp;<a href="http://www.lizseo.com/zhishi/index_3.html">3</a>&nbsp;<a href="http://www.lizseo.com/zhishi/index_2.html">下一页</a>&nbsp;<a href="http://www.lizseo.com/zhishi/index_3.html">尾页</a></div>
+				
+			</div>
+		</div>
+		<div class="mainright">
+			<!-- 最新推荐 -->
+			<div class="bzjianjie">
+				<div class="hot1">热门文章 ></div>
+
+            {{range $articleKey,$article:=.Articles}}
+				<div class="hotcont">
+					<div class="hotph">
+						<div class="pict"><a href="../article/{{$article.ID}}"> <img src="http://www.lizseo.com/e/data/tmp/titlepic/262386583012ff62a7c45cad5662d097.png" alt="附子SEO培训VIP试听课：SEO关键词整站优化策略（2019年新版）"></a>	</div>
+						<div class="hotphtitle"><a title="{{$article.Title}}" href="../article/{{$article.ID}}">{{$article.Title}}</a></div>
+						<div class="clear"></div>
+					</div>
+					<div class="hotphsj">
+							<div class="hotphguanzhu muluguanzhu"><span class="guanzhubj" >关注:</span>966+ </div>
+							<div class="hotphtime mulutime mulurightime"> <span class="mulutimebj" ></span>2019-01-22</div>
+					</div>
+				</div>
+			{{end}}
+		</div>
+			
+			<!-- 最新推荐 -->
+		</div>
+	</div>
+
+	<div class="clear"></div>
+		<div class="footer">
+		<!-- 移动底部导航 -->
+		<div class="mnav pcnone">
+			<li class="mfindx"><a href="http://www.lizseo.com/"><span></span>首页</a></li>
+			<li class="mfres"><a href="http://www.lizseo.com/kecheng/17.html"><span></span>课程介绍</a></li>
+			<li class="mfff"><a href="http://www.lizseo.com/suanfa/"><span></span>SEO算法</a></li>
+			<li class="mfxg"><a href="http://www.lizseo.com/zhishi/"><span></span>SEO知识</a></li>
+			<li class="mfask"><a href="http://www.lizseo.com/anli/"><span></span>培训案例</a></li>
+		</div>
+		<div class="fanhuitop"><a  href="#top" ref="nofollow"><img src="http://www.lizseo.com/skin/lulu1.0/images/fhtop.png" title="返回顶部" ></a></div>
+	    <div class="dibu">
+	        <a  href="http://www.lizseo.com/sitemap.xml" target="blank">网站地图 .</a>
+	        <a  href="http://www.lizseo.com/sitemap.html" target="blank">导航地图 </a>
+			<a href="http://www.lizseo.com/seo/index.html" target="blank">SEO公司</a>
+	    </div>
+		<div class="banquan">
+	        <span>Copyright 2017 © www.lizseo.com All Rights Reserved. </span> 
+	        <a class="mnone" rel="nofollow" href="http://www.miibeian.gov.cn/" class="icp" target="_blank"> 沪ICP备17015187号</a> 
+	    </div> 
+	    <div class="tongjidaima"></div>
+	</div>
+
+</div>
+</body>
+</html>
+{{end}}

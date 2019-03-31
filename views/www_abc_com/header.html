@@ -1,0 +1,44 @@
+{{define "/tpl1/header.html"}}
+<header>
+	<div class="headtot">
+		<div class="logo"><a href="/"> <img src="{{.Config.Logo}}" alt="棋牌门户咨询"></a></div>
+
+		<div class="nav">
+			<li class="shouye"><a href="/">首页</a></li>
+
+            {{range $forumKey,$forum:=.Forums}}
+			<li><a href="/forum/{{$forum.ID}}" title="{{$forum.ForumName}}">{{$forum.ForumName}}</a></li>
+		   {{end}}
+
+		</div>
+</header>
+<div class="clear"></div>
+<div class="main">
+	<div class="top1">
+		<div class="top1img">
+		<div id="slideBox" class="slideBox">
+			<div class="hd">
+				<ul> </ul>
+			</div>
+			<div class="bd">
+				<ul>
+
+            {{range $bannerKey,$banner:=.Banners}}
+			<li><a href="/" target="_blank"><img src="{{$banner}}" alt="棋牌游戏门户平台推荐" /></a></li>
+			{{end}}
+				</ul>
+			</div>
+
+			<a class="prev" href="javascript:void(0)"></a> 
+			<a class="next" href="javascript:void(0)"></a>
+
+		</div>
+
+		<script type="text/javascript">
+		jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+		</script>
+
+		</div>
+	</div>
+	<div class="clear"></div>
+	{{end}}

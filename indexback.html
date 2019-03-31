@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+	<title>{{.Title}}</title>
+    <meta name="keywords" content="SEO培训" />
+    <meta name="description" content="附子SEO培训-让你成为一个懂算法、控策略、玩运营的全方位SEO技术人才，国内独家SEO新站快速排名技术。赠送免费SEO培训教程，附子QQ：1013240126" />
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="MobileOptimized" content="width"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <meta name="baidu-site-verification" content="SfcyNEIlgp" />
+    <meta name="sogou_site_verification" content="GYaKbl5TXI"/>
+<meta name="360-site-verification" content="8d0ef552b27b938e22ca9e45cd0382b1" />
+    <link rel="stylesheet" type="text/css"   href="http://127.0.0.1:8990/www_abc_com/css/index.css" />
+    <link rel='canonical' href="" />
+	<script type="text/javascript" src="http://127.0.0.1:8990/www_abc_com/js/jquery1.42.min.js"></script>
+	<script type="text/javascript" src="http://127.0.0.1:8990/www_abc_com/js/jquery.SuperSlide.2.1.1.js"></script> 
+</head>
+<body>
+<header>
+	<div class="headtot">
+		<div class="logo"><a href="http://www.lizseo.com/"> <img src="http://127.0.0.1:8990/www_abc_com/image/logo.png" alt="SEO培训"></a></div>
+<!--
+		<div class="nav">
+			<li class="shouye"><a href="http://www.lizseo.com/">首页</a></li>
+		   <li><a href="http://www.lizseo.com/kecheng/" title="课程介绍">课程介绍</a></li>       <li><a href="http://www.lizseo.com/anli/" title="培训案例">培训案例</a></li>			        <li><a href="http://www.lizseo.com/gongju/" title="SEO工具">SEO工具</a></li>			        <li><a href="http://www.lizseo.com/suanfa/" title="SEO算法">SEO算法</a></li>			        <li><a href="http://www.lizseo.com/zhishi/" title="SEO知识">SEO知识</a></li> 
+				
+			</div>
+			!-->
+
+		<div class="nav">
+			<li class="shouye"><a href="http://www.lizseo.com/">首页</a></li>
+			{{range .Forums}}<li><a href="http://www.lizseo.com" title="abc">{{.ForumName}}</a></li>{{end}}
+		</div>
+
+		<div class="search"> 
+			<form  action="http://www.lizseo.com/e/sch/index.php" method="get" name="schform" >
+			     	<input class="sssf"  name="keyboard" type="text" id="keyboard"    placeholder="SEO干货 搜索">
+			     	<div class="ssan"><input class="ssgo"   type="image" value="go" src="http://www.lizseo.com/skin/lulu1.0/images/ss1.png" /></div>
+			</form>			
+		</div>
+		<div class="toask">
+			<li><a rel="nofollow" href="http://www.lizseo.com/e/DoInfo/AddInfo.php?classid=4">提问</a></li>
+		</div>
+	</div>
+
+</header>
+<div class="clear"></div>
+<div class="main">
+	<div class="top1">
+		<div class="top1img">
+		<div id="slideBox" class="slideBox">
+			<div class="hd">
+				<ul> </ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li><a href="http://www.lizseo.com/kecheng/17.html" target="_blank"><img src="http://127.0.0.1:8990/www_abc_com/image/pctop1.png" alt="附子SEO实战技术培训课程" /></a></li>
+					<li><a href="http://www.lizseo.com/kecheng/17.html" target="_blank"><img src="http://127.0.0.1:8990/www_abc_com/image/pctop2.png" alt="附子SEO排名" /></a></li>				
+				</ul>
+			</div>
+
+			<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+			<a class="prev" href="javascript:void(0)"></a> 
+			<a class="next" href="javascript:void(0)"></a>
+
+		</div>
+
+		<script type="text/javascript">
+		jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+		</script>
+
+		</div>
+	</div>
+	<div class="clear"></div>
+
+	<div class="top2">
+		<div class="mianleft">
+			<div class="mianlefth1"><h1>SEO核心技术培训</h1></div>
+			
+			<div class="maincontent">
+				<div class="content">
+					<!-- 循环开始-->
+	{{range .Articles}}
+					<div class="contop">
+						<div class="contopleft">
+							<div class="conttitle">
+								<a href="http://www.lizseo.com/kecheng/17.html">{{.Title}}</a>
+							</div>
+							<div class="condes">
+								<!-- 循环文章内容  -->	
+							<li><a href="http://www.lizseo.com" title="abc">{{.ArticleContent}}</a></li>	</div>
+						</div>
+						<div class="contentright">
+								<a href=""><img src="http://www.lizseo.com/e/data/images/notimg11.gif" ></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="contdow">
+						<div class="conyuedu"><span class="yuedubj" >阅读</span>1278</div>
+						<div class="fbtime"><span class="timebj" ></span>{{.CreatedAt}}</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+					<!-- 循环结束 -->
+{{end}}
+
+			</div>
+		</div>
+		<div class="mainright">
+			<div class="bzjianjie syrignht">
+				<div class="bzjjbagr1">SEO培训介绍</div>
+				<div class="bzjjcont">
+				附子SEO培训，8年SEO项目管理经验，擅长用算法解决搜索引擎排序问题。首发国内独家老域名挖掘技术、国内新站秒排名技术，专注SEO实战，我们是认真的！附子QQ/微信：1013240126
+				<img src="http://www.lizseo.com/skin/lulu1.0/images/ytp/rightwx.png" alt="附子微信：q1013240126">
+				</div>
+			</div>
+			<div class="bzjianjie syrignht">
+				<div class="bzjjcont">
+				【SEO福利】<a href="http://www.lizseo.com/suanfa/154.html">独家政府锚文本虚拟外链技术</a>（<a href="http://www.lizseo.com/suanfa/154.html">点击查看技术详情</a>），免费赠送100个政府网站锚文本外链，扫码加附子微信领取，每天名额有限，先到先得！
+				<img src="http://www.lizseo.com/skin/lulu1.0/images/ytp/rightwx.png" alt="附子微信：q1013240126">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+	<!-- footer -->
+		<div class="footer">
+		<!-- 移动底部导航 -->
+		<div class="mnav pcnone">
+			<li class="mfindx"><a href="http://www.lizseo.com/"><span></span>首页</a></li>
+			<li class="mfres"><a href="http://www.lizseo.com/kecheng/17.html"><span></span>课程介绍</a></li>
+			<li class="mfff"><a href="http://www.lizseo.com/suanfa/"><span></span>SEO算法</a></li>
+			<li class="mfxg"><a href="http://www.lizseo.com/zhishi/"><span></span>SEO知识</a></li>
+			<li class="mfask"><a href="http://www.lizseo.com/anli/"><span></span>培训案例</a></li>
+		</div>
+		<div class="fanhuitop"><a  href="#top" ref="nofollow"><img src="http://www.lizseo.com/skin/lulu1.0/images/fhtop.png" title="返回顶部" ></a></div>
+	    <div class="dibu">
+	        <a  href="http://www.lizseo.com/sitemap.xml" target="blank">网站地图 .</a>
+	        <a  href="http://www.lizseo.com/sitemap.html" target="blank">导航地图 </a>
+			<a href="http://www.lizseo.com/seo/index.html" target="blank">SEO公司</a>
+	    </div>
+		<div class="banquan">
+	        <span>Copyright 2017 © www.lizseo.com All Rights Reserved. </span> 
+	        <a class="mnone" rel="nofollow" href="http://www.miibeian.gov.cn/" class="icp" target="_blank"> 沪ICP备17015187号</a> 
+	    </div> 
+	    <div class="tongjidaima"></div>
+	</div>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<!--百度统计-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8b7ca1767a027c0ac4628fae1cf8339e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!--百度统计结束-->
+	<!-- 友情链接 -->
+		<div class="youqinglianj">友情链接：
+			<a href="http://www.lizseo.com">SEO培训</a>
+			<a href="http://www.niubseo.com">网站优化</a>
+			<a href="http://liyongseo.com">SEO优化</a>
+			<a href="https://www.dalianseo.com/">大连SEO</a>
+			<a href="http://www.seopeixunwang.net">SEO实战培训</a>
+			<a href="http://www.maijikj.com">会计培训</a>
+			<a href="http://www.frm.cn">FRM</a>
+			<a href="http://www.hzseoseo.cn">SEO优化</a>
+			<a href="http://www.seoo2o.cn">SEO技术</a>
+			<a href="http://www.tui56.com">SEO</a>
+			<a href="http://www.zy258.cn">网络推广</a>
+			<a href="https://www.yuntask.com">SEO</a>
+			<a href="https://www.seowhy7.com/">SEO优化</a>
+			<a href="http://www.swdir.com/">分类目录</a>
+			<a href="http://www.kj35.cn/">SEO</a>
+			<a href="https://www.baidufree.com">熊掌号</a>
+			<a href="https://www.xiaoleteam.com/">网络营销推广</a>
+			<a href="http://www.longseor.com/">网络营销培训</a>
+			<a href="http://www.hq-food.cn">小吃培训</a>
+			<a href="https://zhaoyangang.cn/">seo</a>
+			<a href="http://www.chinamarketing.com.cn/">品牌规划</a>
+			<a href="http://www.xiayiseo.com/">SEO公司</a>
+			<a href="https://www.seotl.com/">重庆SEO</a>
+			<a rel="nofollow" href="http://www.wocaoseo.net">焦大SEO培训</a>
+			<a rel="nofollow" href="http://www.seo.net.cn">王通SEO培训</a>
+			<a rel="nofollow" href="http://seo.aizhan.com">爱站SEO培训</a>
+			<a rel="nofollow" href="http://www.seowhy.com">搜外SEO培训</a>
+	</div>
+	<div class="youqinglianj">合作伙伴：
+			<a href="http://www.hxf111.com">注册公司</a>
+			<a href="http://www.7881.com">游戏交易平台</a>
+			<a href="https://www.uhaozu.com/">租号</a>
+			<a href="http://www.fjagia.org/">口红</a>
+	</div>
+</div>
+</body>
+</html>

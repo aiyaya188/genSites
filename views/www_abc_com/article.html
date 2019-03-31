@@ -1,0 +1,185 @@
+{{define "/tpl1/article.html"}}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+	<title>{{.Article.Title}}</title>
+    <meta name="description" content="{{.Article.Title}}" />
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="MobileOptimized" content="width"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css"   href="../static/www_abc_com/css/index.css" />
+    <link rel="stylesheet" type="text/css"   href="../static/www_abc_com/css/sincat.css" />
+	<script type="text/javascript" src="../static/www_abc_com/js/jquery1.42.min.js"></script>
+	<script type="text/javascript" src="../static/www_abc_com/js/jquery.SuperSlide.2.1.1.js"></script> 
+</head>
+<body>
+<div class="clear"></div>
+
+{{template "/tpl1/header.html" .}}
+<div class="main ">
+<div class="mianbaoxie articmianbaoxie"> 当前位置：<a href="/">首页</a>&nbsp;>&nbsp;<a href="/forum/{{.CurrentForum.ID}}">{{.CurrentForum.ForumName}}</a> > {{.Article.Title}}</div>
+	<div class="top2 mulutop2">
+		<div class="mianleft">	
+					<!-- 正文主体 -->
+			<div class="maincontent artcontent">		
+				<div class="artititle"><h1>{{.Article.Title}}</h1></div>
+				<div class="clear"></div>
+				<div class="articlcontent">
+				<p>&nbsp; &nbsp; &nbsp;
+				{{.Article.ArticleContent}}
+				</p>
+				</div>
+				
+					<div class="wztag">
+
+								
+					<div class="wztagriht">© 著作权归作者所有</div>
+					<div class="clear"></div>
+				</div>
+				
+				<div class="wzfanye">
+
+					<div class="fysyy">上一篇：<a href='/'></a></div>
+					<div class="fyxyy">下一篇：<a href='/'></a></div>
+					<div class="clear"></div>
+				</div>
+	<div class="zhan">
+					<div class="zhanjuzhong">
+						<div class="zhanleft"> 
+							<a title="赞" rel="nofollow" href="">
+								<i></i> 
+								<span>标签1232323</span>
+								<span class="zhanshu"><script type="text/javascript" src=""></script></span>
+							</a>
+						</div>
+					</div>
+			</div>
+
+				<div class="zhan">
+					<div class="zhanjuzhong">
+						<div class="zhanleft"> 
+							<a title="赞" rel="nofollow" href="">
+								<i></i> 
+								<span>标签1232323</span>
+								<span class="zhanshu"><script type="text/javascript" src=""></script></span>
+							</a>
+						</div>
+					</div>
+			</div>
+
+				<div class="zhan">
+					<div class="zhanjuzhong">
+						<div class="zhanleft"> 
+							<a title="赞" rel="nofollow" href="">
+								<i></i> 
+								<span>标签1232323</span>
+								<span class="zhanshu"><script type="text/javascript" src=""></script></span>
+							</a>
+						</div>
+					</div>
+			</div>
+				<div class="clear"></div>
+					<!-- 回答互动 -->	
+								<!-- 回答互动 -->
+					
+					<div class="clear"></div>
+					<div class="hdpl">
+					<div class="hdpls"><span>2 &nbsp条评论</span></div>
+						<!-- 互动内容 -->
+						<div class="hdplcont">
+						<div class="hdplcontup">
+							<div class="hdplcontupleft huidauptx"><img src="http://www.lizseo.com//skin/lulu1.0/shuiji/sjtx/241.jpg" alt="11头像"></div>
+							<div class="hdplcontuprigh">
+								<div class="hdplcontuprighup">11</div>
+								<div class="hdplcontuprighdow">2019-03-12</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="hdplcontmid">
+							<p>每天学习一点点</p>
+						</div>
+						<div class="clear"></div>
+						<div class="hdplcontdow">
+							<a title="赞" rel="nofollow" href="JavaScript:makeRequest('http://www.lizseo.com/e/pl/doaction.php?enews=DoForPl&plid=1439&classid=3&id=491&dopl=1&doajax=1&ajaxarea=zcpldiv1439','EchoReturnedText','GET','');">
+								<span class="dianzan"></span>
+								<span>0人赞</span>
+							</a>
+						</div>
+						<div class="clear"></div>
+					</div><div class="hdplcont">
+						<div class="hdplcontup">
+							<div class="hdplcontupleft huidauptx"><img src="http://www.lizseo.com//skin/lulu1.0/shuiji/sjtx/115.jpg" alt="明白人头像"></div>
+							<div class="hdplcontuprigh">
+								<div class="hdplcontuprighup">明白人</div>
+								<div class="hdplcontuprighdow">2019-03-12</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="hdplcontmid">
+							<p>这个思路还是非常棒的，测试过不少的内容，标题上面写答案的确可以对网站流量和点击率有很好的加分作用</p>
+						</div>
+						<div class="clear"></div>
+						<div class="hdplcontdow">
+							<a title="赞" rel="nofollow" href="JavaScript:makeRequest('http://www.lizseo.com/e/pl/doaction.php?enews=DoForPl&plid=1438&classid=3&id=491&dopl=1&doajax=1&ajaxarea=zcpldiv1438','EchoReturnedText','GET','');">
+								<span class="dianzan"></span>
+								<span>0人赞</span>
+							</a>
+						</div>
+						<div class="clear"></div>
+					</div>						<!-- 互动内容 -->
+				</div>
+					
+			</div>
+		</div>
+		<div class="mainright">
+			<div class="bzjianjie">
+				<div class="hot1">热门咨询 ></div>
+			</div>
+
+			<div class="bzjianjie">
+
+            {{range $articleKey,$article:=.Articles}}
+				<div class="hotcont">
+						<div class="hotph">
+							<div class="pict"><a href="http://www.lizseo.com/kecheng/431.html"> <img src="http://www.lizseo.com/e/data/tmp/titlepic/2c6dbdb0272e0a06024c564cf09f92af.png" alt="{{$article.Title}}"></a></div>
+							<div class="hotphtitle"><a title="{{$article.Title}}" href="../article/{{$article.ID}}">{{$article.Title}}</a></div>
+							<div class="clear"></div>
+						</div>
+						<div class="hotphsj">
+								<div class="hotphguanzhu muluguanzhu"><span class="guanzhubj" >关注:</span>1893+ </div>
+								<div class="hotphtime mulutime"> <span class="mulutimebj" ></span>2018-12-07</div>
+						</div>
+				</div>	
+				{{end}}	
+				</div>
+			</div>
+	<div class="clear"></div>
+		<div class="footer">
+		<!-- 移动底部导航 -->
+		<div class="mnav pcnone">
+			<li class="mfindx"><a href="http://www.lizseo.com/"><span></span>首页</a></li>
+			<li class="mfres"><a href="http://www.lizseo.com/kecheng/17.html"><span></span>课程介绍</a></li>
+			<li class="mfff"><a href="http://www.lizseo.com/suanfa/"><span></span>SEO算法</a></li>
+			<li class="mfxg"><a href="http://www.lizseo.com/zhishi/"><span></span>SEO知识</a></li>
+			<li class="mfask"><a href="http://www.lizseo.com/anli/"><span></span>培训案例</a></li>
+		</div>
+		<div class="fanhuitop"><a  href="#top" ref="nofollow"><img src="http://www.lizseo.com/skin/lulu1.0/images/fhtop.png" title="返回顶部" ></a></div>
+	    <div class="dibu">
+	        <a  href="http://www.lizseo.com/sitemap.xml" target="blank">网站地图 .</a>
+	        <a  href="http://www.lizseo.com/sitemap.html" target="blank">导航地图 </a>
+			<a href="http://www.lizseo.com/seo/index.html" target="blank">SEO公司</a>
+	    </div>
+		<div class="banquan">
+	        <span>Copyright 2017 © www.lizseo.com All Rights Reserved. </span> 
+	        <a class="mnone" rel="nofollow" href="http://www.miibeian.gov.cn/" class="icp" target="_blank"> 沪ICP备17015187号</a> 
+	    </div> 
+	    <div class="tongjidaima"></div>
+	</div>
+
+</div>
+</div>
+</body>
+</html>
+{{end}}

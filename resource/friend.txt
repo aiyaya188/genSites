@@ -1,0 +1,5 @@
+阿里云=www.aliyun.com
+七牛云=www.qiniu.com
+又拍云=www.upyun.com
+环信=www.easemob.com
+听云=www.tingyun.com
